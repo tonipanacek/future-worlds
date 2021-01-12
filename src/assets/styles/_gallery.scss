@@ -1,0 +1,7 @@
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem 1rem;
+  padding: 6rem;
+  align-items: center;
+}

@@ -1,25 +1,23 @@
-$blue: darkslateblue;
-$bg-body: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+@import 'colors';
+@import 'nav';
+@import 'footer';
+@import 'home';
+@import 'about';
+@import 'gallery';
 
 html,
 body {
   height: 100%;
+  min-height: 100vh;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Mono', Courier, monospace;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
-body {
-  background-color: $bg-body;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h1 {
-  color: $blue;
-}
-
-img {
-  width: 15vw;
-  max-width: 6.25rem;
+main {
+  display: grid;
+  color: white;
 }

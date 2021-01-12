@@ -1,0 +1,14 @@
+.text-grid {
+  display: grid;
+  grid-gap: 2rem;
+  padding: 8rem 10rem 0 10rem;
+  h2 {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  grid-template-columns: repeat(2, 1fr);
+}
