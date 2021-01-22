@@ -8,6 +8,10 @@
 @import 'about';
 @import 'gallery';
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
