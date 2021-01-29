@@ -1,9 +1,10 @@
 .home {
-  position: relative;
+  // position: relative;
 }
 
 .home-grid {
   display: grid;
+  height: 100%;
   @include respond-to('medium') {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -23,38 +24,58 @@
   }
   h3 {
     font-size: 5rem;
+    font-weight: 300;
     text-transform: uppercase;
     margin: 0;
     transition: all 500ms;
   }
   &:hover {
     cursor: pointer;
-    h3 {
-      font-size: 6rem;
-    }
-    span {
-      display: block;
-    }
   }
 }
 
-.hidden {
-  display: none;
-}
-
-.flex {
-  display: flex;
-}
+.hidden { display: none; }
+.flex { display: flex; }
+.white-text { color: white; }
 
 .quote-box {
-  background: blue;
+  background: $red;
+  color: blue;
   position: absolute;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 4rem;
+  z-index: 10;
   top: 0;
   bottom: 0;
-  right: 0;
-  left: 0;
+  right: 25%;
+  left: 25%;
+  h4 {
+    font-size: 2.25em;
+    font-weight: 300;
+  }
+  audio {
+    display: none;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0, 0, 0, 0.75);
+  z-index: 9;
+  color:white;
 }

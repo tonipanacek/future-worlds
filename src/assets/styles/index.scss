@@ -20,9 +20,5 @@ body {
   font-family: 'Roboto Mono', Courier, monospace;
   display: grid;
   grid-template-rows: auto 1fr auto;
-}
-
-main {
-  display: grid;
-  color: white;
+  position: relative;
 }
