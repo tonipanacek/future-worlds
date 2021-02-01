@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Pages
 - type: directory
-  path: ''
+  path: src
   label: Pages
   create: all
   match: "**/*"
