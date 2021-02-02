@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html class="{{ htmlClass }}" lang="{{ site.lang }}">
   <head>
-    {% include "head.njk" %}
+    {% include "_head.njk" %}
   </head>
   <body class="{{ bodyClass }}">
-    {% include "navbar.njk" %}
-
-    {{ content | safe }}
-
-    {% include "footer.njk" %}
+    {% include "_navbar.njk" %}
+    {% block main %}
+      {{ content | safe }}
+    {% endblock %}
+    {% include "_footer.njk" %}
   </body>
 </html>

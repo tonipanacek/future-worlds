@@ -1,0 +1,15 @@
+{% extends "./default.njk" %}
+
+{% block main %}
+<main class="{{ bgColor }} gallery">
+  <div class="text-grid">
+    <h2>{{ pageTitle }}</h2>
+    <p>{{ pageDescription }}</p>
+  </div>
+  <div class="image-gallery">
+    {% for imageUrl in images %}
+    <img src="{{ imageUrl }}" class="">
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}

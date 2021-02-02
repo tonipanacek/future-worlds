@@ -2,4 +2,7 @@ footer {
   background: $orange;
   padding: 0 2rem;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
