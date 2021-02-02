@@ -11,14 +11,15 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: future-worlds
+public_path: future-worlds
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
-  install_dependencies_command: npm install
+  preview_output_directory: dist
+  install_dependencies_command: yarn install
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run develop
+  instant_preview_command: yarn start
