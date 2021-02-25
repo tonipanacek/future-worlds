@@ -1,0 +1,59 @@
+{% extends "./default.njk" %}
+
+{% block main %}
+<main class="{{ bgColor }} your-say">
+  <!-- <div class="main-content"> -->
+    <div class="your-say-grid">
+      <div class="left">
+        <h2>{{ question1 }}</h2>
+        <div class="your-say-box long blue">
+          <p>In 50 years I see Hackney as a green Space that champions sustainability</p>
+          <p>Emily, 21 Hoxton</p>
+        </div>
+        <div class="your-say-box short pink">
+          <p>Solar powered cars and buses in Hackney!</p>
+          <p>Emily, 21 Hoxton</p>
+        </div>
+        <div class="your-say-box medium yellow">
+          <p>I want to see more opportunity for young people to be heard in Hackney and throughout London</p>
+          <p>Emily, 21 Hoxton</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="your-say-box short yellow">
+          <p>I want to see more opportunity for young people to be heard in Hackney and throughout London</p>
+          <p>Emily, 21 Hoxton</p>
+        </div>
+        <div class="your-say-box medium blue">
+          <p>In 50 years I see Hackney as a green Space that champions sustainability</p>
+          <p>Emily, 21 Hoxton</p>
+        </div>
+        <h2>{{ question2 }}</h2>
+        <div class="your-say-box short pink">
+          <p>Solar powered cars and buses in Hackney!</p>
+          <p>Emily, 21 Hoxton</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="collapsible blue">
+      Have Your Say
+    </div> -->
+  <!-- </div> -->
+  <div class="form-section">
+    <!-- <button type="button" class="collapsible">Have Your Say</button> -->
+    <div class="content">
+      <form action="">
+        <label for="quote">What do you have to say?</label>
+        <textarea name="quote" rows="5"></textarea>
+        <label for="name">What's your name?</label>
+        <input type="text" name="name">
+        <label for="age">What's your age?</label>
+        <input type="text" name="age">
+        <label for="borough">Which borough do you live in?</label>
+        <input type="text" name="borough">
+        <input type="submit" class="submit-btn">
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}

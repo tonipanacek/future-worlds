@@ -1,0 +1,73 @@
+.your-say {
+  display: flex;
+}
+.your-say-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 1rem;
+  padding: 4rem 6rem;
+  transition: margin-right .5s;
+  h2 {
+    font-size: 2rem;
+  }
+  .your-say-box {
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 2rem;
+  }
+  .your-say-box:nth-child(2), .your-say-box:nth-child(4) {
+    margin-left: -10px;
+  }
+  .short { width: 60%; }
+  .medium { width: 80%; }
+  .long { width: 90%; }
+}
+
+.form-section {
+  max-width: 40%;
+  height: 100%;
+  // position: sticky;
+  // top: 0;
+  display: flex;
+}
+
+.collapsible {
+  writing-mode: vertical-lr;
+  height: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.content {
+  // padding: 1rem;
+  height: 100%;
+  width: 350px;
+  // position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 53px;
+  // display: none;
+  overflow: hidden;
+  transition: 0.5s ease-out;
+  background-color: white;
+  color: $blue;
+  form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    padding-top: 9rem;
+    justify-content: space-around;
+  }
+  textarea, input {
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    background: $light-blue;
+    color: white;
+  }
+  .submit-btn {
+    font-family: 'Roboto Mono'
+  }
+}
