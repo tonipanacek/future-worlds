@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0 1rem;
-  padding: 4rem 6rem;
+  padding: 4rem 2rem 4rem 6rem;
   transition: margin-right .5s;
   h2 {
     font-size: 2rem;
@@ -25,10 +25,10 @@
 
 .form-section {
   max-width: 40%;
-  height: 100%;
-  // position: sticky;
-  // top: 0;
+  height: 90vh;
   display: flex;
+  position: sticky;
+  top: 4rem;
 }
 
 .collapsible {
@@ -40,34 +40,37 @@
 }
 
 .content {
-  // padding: 1rem;
-  height: 100%;
-  width: 350px;
-  // position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 53px;
-  // display: none;
-  overflow: hidden;
+  height: 90%;
+  width: 400px;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 25px;
   transition: 0.5s ease-out;
   background-color: white;
   color: $blue;
+  overflow: scroll;
   form {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    height: 80%;
-    padding-top: 9rem;
     justify-content: space-around;
+  }
+  label {
+    margin: 1rem 0;
   }
   textarea, input {
     border-radius: 15px;
     padding: 10px;
     outline: none;
-    background: $light-blue;
+    background-color: $blue;
     color: white;
+    border: none;
+    font-family: inherit;
   }
   .submit-btn {
-    font-family: 'Roboto Mono'
+    font-family: inherit;
+    width: 50%;
+    align-self: center;
+    margin-top: 1rem;
   }
 }

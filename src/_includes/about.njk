@@ -3,6 +3,8 @@
 {% block main %}
 <main class="{{ bgColor }} text-grid about">
   <h2>{{ pageTitle }}</h2>
-  <p>{{ pageDescription }}</p>
+  <div class="text-content">
+    {{ content | safe }}
+  </div>
 </main>
 {% endblock %}

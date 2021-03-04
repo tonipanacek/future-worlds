@@ -5,6 +5,8 @@ const quoteBox = document.querySelector('.quote-box');
 const overlayDiv = document.querySelector('.overlay-div');
 const closeBtn = document.querySelector('.close-btn');
 const expandableForm = document.querySelector('.collapsible');
+const body = document.body;
+console.log(body);
 
 if (wordBoxes.length !== 0) {
   wordBoxes.forEach((box) => {
@@ -12,7 +14,8 @@ if (wordBoxes.length !== 0) {
       quoteBox.classList.remove('hidden');
       quoteBox.classList.add('flex');
       overlayDiv.classList.add('overlay');
-      quoteBox.querySelector('#empowering').play();
+      body.classList.add('noscroll');
+      setTimeout(() => quoteBox.querySelector('#empowering').play(), 2000)
     })
   });
 
@@ -20,6 +23,7 @@ if (wordBoxes.length !== 0) {
     quoteBox.classList.remove('flex');
     quoteBox.classList.add('hidden');
     overlayDiv.classList.remove('overlay');
+    body.classList.remove('noscroll');
     const audio = quoteBox.querySelector('#empowering')
     audio.pause();
     audio.currentTime = 0;
