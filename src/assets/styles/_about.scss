@@ -14,4 +14,16 @@
     padding: 8rem 10rem;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .logos {
+    display: flex;
+    flex-direction: column;
+    height: 40ch;
+    justify-content: space-between;
+    margin-top: 2rem;
+    img {
+      width: 200px;
+
+    }
+  }
 }
