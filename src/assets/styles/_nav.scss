@@ -9,10 +9,31 @@ nav {
   h1 {
     font-size: 1.75rem;
   }
+  .hamburger {
+    outline: none;
+    border: 0;
+    background: inherit;
+    svg { fill: white; }
+    @include respond-to('large') {
+      display: none;
+    }
+  }
   ul {
+    position: absolute;
+    right: 0;
+    top: 67px;
+    background: $orange;
+    padding-right: 2rem;
+    text-align: right;
+    height: 116px;
     list-style: none;
-    display: flex;
     justify-content: space-between;
+    display: none;
+    @include respond-to('large') {
+      display: flex;
+      position: static;
+      padding-right: 0;
+    }
     li:nth-child(2) {
       margin-left: 2rem;
     }

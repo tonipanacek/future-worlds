@@ -6,10 +6,10 @@ $red: rgba(255, 85, 77, 1);
 $light-blue: rgba(45, 155, 241, 1);
 $yellow: rgba(255, 212, 47, 1);
 
-.blue { background: $blue }
-.green { background: $green }
-.pink { background: $pink }
-.red { background: $red }
-.light-blue { background: $light-blue }
-.yellow { background: $yellow }
-.orange{ background: $orange }
+.blue { background: $blue !important; }
+.green { background: $green !important; }
+.pink { background: $pink  !important; }
+.red { background: $red !important; }
+.light-blue { background: $light-blue !important; }
+.yellow { background: $yellow !important; }
+.orange{ background: $orange !important; }

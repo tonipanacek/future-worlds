@@ -4,6 +4,7 @@
 
 .home {
   position: relative;
+  margin-bottom: 53px;
 }
 
 .home-grid {
@@ -11,7 +12,19 @@
   height: 100%;
   overflow: scroll;
   @include respond-to('medium') {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+.span-2 {
+  @include respond-to('medium') {
+    grid-column: span 2;
+  }
+}
+.span-3 {
+  @include respond-to('medium') {
+    grid-column: span 3;
   }
 }
 
@@ -53,16 +66,15 @@
 .white-text { color: white; }
 
 .quote-box {
-  background: $red;
-  color: blue;
+  color: white;
   position: fixed;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   padding: 4rem;
   z-index: 13;
-  top: 0;
-  bottom: 0;
+  top: 15px;
+  bottom: 15px;
   right: 25%;
   left: 25%;
   overflow-y: scroll;
@@ -73,6 +85,36 @@
   audio {
     display: none;
   }
+  &.green {
+    color: $pink;
+    .highlight {
+      background: white;
+      color: $pink;
+      font-size: 2.2rem;
+      line-height: 3.2rem;
+    }
+  }
+  &.blue {
+    color: $orange;
+  }
+  &.red {
+    color: $blue;
+  }
+  &.pink {
+    color: $red;
+  }
+  &.yellow {
+    color: $blue;
+    .highlight {
+      background: $red;
+    }
+  }
+  &.light-blue {
+    color: $yellow;
+  }
+  &.orange {
+    color: $blue;
+  }
 }
 
 .close-btn {
@@ -81,6 +123,7 @@
   right: 5%;
   font-size: 4rem;
   cursor: pointer;
+  color: white;
 }
 
 
@@ -91,9 +134,43 @@
   left:0;
   right:0;
   bottom:0;
-  background-color:rgba(0, 0, 0, 0.75);
+  background-color:rgba(0, 0, 0, 0.4);
   z-index: 12;
   color:white;
+}
+
+.sticker-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $yellow;
+  transition: all 500ms;
+}
+
+#build:hover {
+  button {
+    transform: scale(1.12);
+  }
+}
+
+.sticker {
+  font-family: inherit;
+  color: inherit;
+  border: 0;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  z-index: 10;
+  font-size: 1.2rem;
+  transition: all 500ms;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 #listen-parent {
@@ -108,25 +185,6 @@
   top: 0;
   right: 20px;
   height: 100%;
-}
-
-.sticker {
-  font-family: inherit;
-  color: inherit;
-  background: $orange;
-  border: 0;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  text-transform: uppercase;
-  z-index: 10;
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  &:focus {
-    outline: none;
-  }
 }
 
 #listen {

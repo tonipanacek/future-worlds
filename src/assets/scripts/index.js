@@ -1,32 +1,37 @@
-const foo = (() => Promise.resolve().then(() => console.log('Hello world')))();
+// const foo = (() => Promise.resolve().then(() => console.log('Hello world')))()
 
 const wordBoxes = document.querySelectorAll('.word-box');
-const quoteBox = document.querySelector('.quote-box');
+// const quoteBox = document.querySelector('.quote-box');
 const overlayDiv = document.querySelector('.overlay-div');
-const closeBtn = document.querySelector('.close-btn');
+const closeBtns = document.querySelectorAll('.close-btn');
 const expandableForm = document.querySelector('.collapsible');
 const body = document.body;
-console.log(body);
 
 if (wordBoxes.length !== 0) {
   wordBoxes.forEach((box) => {
+    const id = box.id;
+    const quote = document.querySelector(`#${id}-quote`);
+    const audio = quote.querySelector('audio');
     box.addEventListener('click', () => {
-      quoteBox.classList.remove('hidden');
-      quoteBox.classList.add('flex');
+      quote.classList.remove('hidden');
+      quote.classList.add('flex');
       overlayDiv.classList.add('overlay');
       body.classList.add('noscroll');
-      setTimeout(() => quoteBox.querySelector('#empowering').play(), 2000)
+      setTimeout(() => audio.play(), 2000)
     })
   });
 
-  closeBtn.addEventListener('click', () => {
-    quoteBox.classList.remove('flex');
-    quoteBox.classList.add('hidden');
-    overlayDiv.classList.remove('overlay');
-    body.classList.remove('noscroll');
-    const audio = quoteBox.querySelector('#empowering')
-    audio.pause();
-    audio.currentTime = 0;
+  closeBtns.forEach((button) => {
+    button.addEventListener('click', () => {
+      const quote = button.parentElement;
+      const audio = quote.querySelector('audio');
+      quote.classList.remove('flex');
+      quote.classList.add('hidden');
+      overlayDiv.classList.remove('overlay');
+      body.classList.remove('noscroll');
+      audio.pause();
+      audio.currentTime = 0;
+    })
   });
 }
 

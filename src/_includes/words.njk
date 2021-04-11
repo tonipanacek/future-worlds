@@ -2,61 +2,141 @@
 
 {% block main %}
 <main class="home">
-  <div id="listen-parent">
+{#   <div id="listen-parent">
     <button class="sticker" id="listen">Click to listen!</button>
-  </div>
+  </div> #}
   <div class="home-grid">
-    <div class="word-box green" id="green">
-      <button>Green</button>
-    </div>
-    <div class="word-box blue">
-      <button>Ours</button>
-    </div>
-    <div class="word-box yellow">
-      <button>Community</button>
-    </div>
-    <div class="word-box red">
-      <button>Young</button>
-    </div>
-    <div class="word-box light-blue">
-      <button>History</button>
-    </div>
-    <div class="word-box pink">
-      <button>Joy</button>
-    </div>
-    <div class="word-box blue">
-      <button>Accepting</button>
-    </div>
-    <div class="word-box yellow">
+    <div class="word-box pink span-2" id="changing">
       <button>Changing</button>
     </div>
-    <div class="word-box red">
-      <button>Modest</button>
+    <div class="word-box red span-2" id="green">
+      <button>Green</button>
     </div>
-    <div class="word-box light-blue">
-      <button>Lively</button>
+    <div class="sticker-box" id="instructions">
+      <button class="sticker orange">Click to Listen and Read!</button>
     </div>
-    <div class="word-box pink">
-      <button>Spontaneous</button>
+    <div class="word-box green span-2" id="young">
+      <button>Young</button>
     </div>
-    <div class="word-box green">
-      <button>Positive</button>
+    <div class="word-box blue" id="ours">
+      <button>Ours</button>
+    </div>
+    <div class="word-box light-blue span-2" id="joyful">
+      <button>Joyful</button>
+    </div>
+    <div class="word-box pink span-2" id="hopeful">
+      <button>Hopeful</button>
+    </div>
+    <div class="word-box blue span-3" id="empowering">
+      <button>Empowering</button>
+    </div>
+    <div class="sticker-box" id="build">
+      <button class="sticker light-blue"><a href="/have-your-say">Build your future world here</a></button>
+    </div>
+    <div class="sticker-box" id="future">
+      <button class="sticker green">What does the future look like?</button>
+    </div>
+    <div class="word-box red span-3" id="creative">
+      <button>Creative</button>
     </div>
   </div>
 
-  <div id="say-parent">
+{#   <div id="say-parent">
     <button class="sticker" id="have-your-say"><a href="/have-your-say">Have your say!</a></button>
-  </div>
+  </div> #}
 
   <div class="overlay-div">
-    <div class="quote-box hidden" id="green">
+    <div class="quote-box hidden green" id="changing-quote">
       <span class="close-btn">&times;</span>
-      <h4>'I feel like gentrification is a huge issue. So it's almost as though <span class="white-text">Hackney is a borough in constant resistance.</span><br><br> That, to me, is particularly empowering.'</h4>
-      <audio id="empowering">
-        <source src="/assets/sounds/empowering.mp3" type="audio/mpeg">
+      <p><span class="highlight">'It’s all changing, so you see change in the infrastructure, you see change in the buildings, you see change in the play areas, the park areas for the children.'</span></p>
+      <audio id="changing-audio">
+        <source src="https://res.cloudinary.com/tonipanoche/video/upload/v1618142106/future-worlds/changing_01_mixdown2_eafemr.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+
+      <p class="white-text">Mustafer, Tee Bone Halal Butchers, 287 Hoxton Street, 2021 </p>
+      <details>
+        <summary>Read the full quotes</summary>
+        <p>
+
+        It’s all changing, so you see change in the infrastructure, you see change in the buildings, you see change in the play areas, the park areas for the children so everything. Change is always good, because they assess things and how it needs to be changed and change it in the right way. If it doesn't work, and the community is going to go against it and they have  to change it back to the way it is. But yeah, change. is always appreciated. And down here in business sense change is good, because you see different people coming in, and different cultures coming in and it’s just growing.’
+        </p>
+
+        <p>Mustafer, Tee Bone Halal Butchers, 287 Hoxton Street , 2021</p>
+
+
+        ‘There used to be a park. It was like a little kids, jungle gym thing, wherever. And I used to play there with my cousins a lot when they had the time to come here. And they recently broke it all down because it was like, all rusty and terrible. I feel like it had so much memories. And I felt like I wish I had time to take a picture of it so I could draw it or paint it. I managed to get around to doing that recently for school. Even though it was rundown and broken and probably dangerous. And probably it's good that it's gone. But I missed it a lot!’
+
+        Khajida Heath-Bailey,  Peer Gallery Ambassador, 2020
+
+        ‘Recently, like, I remember that being a blockbuster there, and then there was a Tesco. And now there's like flats. And, to me, it's just etching away the community that surrounds that, because before we know, it probably Rio [cinema] will be gone too. Yeah, it's taking away all the kind of cultural landmarks or putting them in spaces where they don't necessarily belong, like Rio across from a block of flats that doesn’t feel right to me.’
+
+        Tapiwa Cronin,  Peer Gallery Ambassador, 2020
+
+      </details>
+    </div>
+    <div class="quote-box hidden red" id="green-quote">
+      <span class="close-btn">&times;</span>
+      <h4>'As a borough, I think we can solve all of the messy things which we are trying to do right now. But with <span class="white-text">climate change</span>, we have to bring the <span class="white-text">whole world</span> into that.'</h4>
+      <audio id="green-audio">
+        <source src="https://res.cloudinary.com/tonipanoche/video/upload/v1618142094/future-worlds/Green_edit_mixdown_ttjsea.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p class="white-text">Bridge academy students Year 8, 2020</p>
+    </div>
+    <div class="quote-box hidden pink" id="young-quote">
+      <span class="close-btn">&times;</span>
+      <h4>'It's full of <span class="white-text">youth</span> you can definitely say that. There's <span class="white-text">more children</span> than there are adults.'</h4>
+      <audio id="young-audio">
+        <source src="https://res.cloudinary.com/tonipanoche/video/upload/v1618142060/future-worlds/Young_01_mixdown2_bynaql.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p class="white-text">Emily, Chicken Express, 255 Hoxton Street, 2021 </p>
+    </div>
+    <div class="quote-box hidden yellow" id="ours-quote">
+      <span class="close-btn">&times;</span>
+      <h4>'Hackney is nothing without <span class="white-text highlight">the people</span> that occupy it.'</h4>
+      <audio id="ours-audio">
+        <source src="https://res.cloudinary.com/tonipanoche/video/upload/v1618142094/future-worlds/Ours_02_mixdown_rm0voz.mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
       </audio>
       <p class="white-text">Tapiwa Cronin, Peer Gallery Young Ambassadors. 2021</p>
+    </div>
+    <div class="quote-box hidden light-blue" id="joyful-quote">
+      <span class="close-btn">&times;</span>
+      <h4>'This relates to Hackney because we always have a carnival. And it's just like, a place that <span class="white-text">you get to have fun.</span>'</h4>
+      <audio id="joyful-audio">
+        <source src="https://res.cloudinary.com/tonipanoche/video/upload/v1618142108/future-worlds/Joyful_Final_mixdown_WithWind_noisaf.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p class="white-text">Bridge academy students Year 8, 2020</p>
+    </div>
+    <div class="quote-box hidden orange" id="hopeful-quote">
+      <span class="close-btn">&times;</span>
+      <h4>'<span class="white-text">[In my future world] everyone’s treated equality,</span> it's very diverse, not very much racism, less knife crime, a lot of homeless shelters and a lot of schools for homeless children.'</h4>
+      <audio id="hopeful-audio">
+        <source src="https://res.cloudinary.com/tonipanoche/video/upload/v1618142091/future-worlds/Hopeful01_mixdown_fwgaag.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p class="white-text">Shoreditch Park Academy, Year 2020</p>
+    </div>
+    <div class="quote-box hidden blue" id="empowering-quote">
+      <span class="close-btn">&times;</span>
+      <h4>'There's lots of opportunity here. You can start small but <span class="white-text">go big</span> in Hackney.'</h4>
+      <audio id="empowering-audio">
+        <source src="https://res.cloudinary.com/tonipanoche/video/upload/v1618142086/future-worlds/Empowering__01_mixdown_xp7cuy.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p class="white-text">Bridge academy students Year 8, 2020</p>
+    </div>
+    <div class="quote-box hidden green" id="creative-quote">
+      <span class="close-btn">&times;</span>
+      <h4>'I would love to make a documentary about Hackney, And I'll make it really colorful, like, stupid, colorful, because people need to see <span class="white-text">the vibrancy of the people</span> and of the place.'</h4>
+      <audio id="creative-audio">
+        <source src="https://res.cloudinary.com/tonipanoche/video/upload/v1618142092/future-worlds/creative__01_mixdown_hyeyiz.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p class="white-text">Tapiwa Cronin, Peer Gallery Ambassador, 2020</p>
     </div>
   </div>
 </main>
