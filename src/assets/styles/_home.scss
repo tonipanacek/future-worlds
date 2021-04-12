@@ -118,8 +118,7 @@
   color: white;
   span {
     display: none;
-    transition: all 500ms;
-    transition-delay: 800ms;
+    transition: transform 500ms;
   }
   button {
     font-family: inherit;
@@ -130,7 +129,7 @@
     font-weight: 300;
     text-transform: uppercase;
     margin: 0;
-    transition: all 500ms;
+    transition: transform 500ms;
     display: flex;
     @include respond-to('medium') {
       font-size: 5rem;
@@ -244,7 +243,6 @@
   align-items: center;
   justify-content: center;
   background: $yellow;
-  transition: all 500ms;
   height: 200px;
 }
 
@@ -264,7 +262,7 @@
   text-transform: uppercase;
   z-index: 10;
   font-size: 1.2rem;
-  transition: all 500ms;
+  transition: transform 500ms;
   a {
     color: white;
     text-decoration: none;
@@ -273,40 +271,3 @@
     outline: none;
   }
 }
-
-// #instructions {
-//   position: absolute;
-//   top: 15px;
-//   left: 15px;
-//   height: 100%;
-//   @include respond-to('medium') {
-//     position: static;
-//   }
-// }
-
-// #say-parent {
-//   position: absolute;
-//   top: 0;
-//   right: 20px;
-//   height: 100%;
-//   @include respond-to('medium') {
-//     position: static;
-//   }
-// }
-
-// #listen {
-//   position: sticky;
-//   top: 15px;
-//   left: 15px;
-//   @include respond-to('medium') {
-//     position: static;
-//   }
-// }
-
-// #have-your-say {
-//   position: sticky;
-//   top: 70vh;
-//   @include respond-to('medium') {
-//     position: static;
-//   }
-// }
