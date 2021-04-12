@@ -8,7 +8,7 @@
     </svg>
   </button>
   <ul>
-    <li><a href="/about">About</a></li>
-    <li><a href="/gallery">Project Gallery</a></li>
+    <li class="{{ 'active' if '/about' in page.url}}"><a href="/about">About</a></li>
+    <li class="{{ 'active' if '/gallery' in page.url}}"><a href="/gallery">Project Gallery</a></li>
   </ul>
 </nav>

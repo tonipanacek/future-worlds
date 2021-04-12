@@ -41,20 +41,14 @@
     <!-- <button type="button" class="collapsible">Have Your Say</button> -->
     <div class="content">
       <form action="">
-        <label for="50-years">What do you imagine Hackney will be like in 50 years?</label>
+        <label for="50-years">{{ question1 }}</label>
         <textarea name="50-years" rows="3"></textarea>
-        <label for="future">What would you like to see change for the future in Hackney?</label>
+        <label for="future">{{ question2 }}</label>
         <textarea name="future" rows="3"></textarea>
-        <label for="one-word">What word would you use to describe Hackney?</label>
-        <input type="text" name="one-word">
-        <label for="about">Tell us something about yourself.</label>
-        <textarea name="about" rows="2"></textarea>
         <label for="name">Name:</label>
         <input type="text" name="name">
         <label for="age">Age:</label>
         <input type="text" name="age">
-        <label for="borough">Which part of Hackney are you from?</label>
-        <input type="text" name="borough">
         <input type="submit" class="submit-btn">
       </form>
     </div>
