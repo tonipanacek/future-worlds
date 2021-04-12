@@ -11,8 +11,8 @@
     padding: 0 6rem 4rem 6rem;
   }
   img:nth-child(4n) {
-    grid-column: span 2; /* Spans two columns */
-    grid-row: span 2; /* Spans two rows */
+    grid-column: span 2;
+    grid-row: span 2;
   }
   img {
     width: 100%;

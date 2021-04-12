@@ -4,7 +4,7 @@
 
 .home {
   position: relative;
-  margin-bottom: 53px;
+  margin-bottom: 2rem;
 }
 
 .home-grid {
@@ -168,7 +168,7 @@
   height: 200px;
 }
 
-#build:hover {
+.build:hover {
   button {
     transform: scale(1.12);
   }
