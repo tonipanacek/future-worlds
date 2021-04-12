@@ -24,7 +24,7 @@ nav {
     background: inherit;
     padding: 0;
     svg { fill: white; }
-    @include respond-to('large') {
+    @include respond-to('xl') {
       display: none;
     }
   }
@@ -39,22 +39,22 @@ nav {
     background: $orange;
     padding-right: 2rem;
     text-align: right;
-    height: 116px;
+    height: 176px;
     list-style: none;
     justify-content: space-between;
     display: none;
     @include respond-to('medium') {
       top: 67px;
     }
-    @include respond-to('large') {
+    @include respond-to('xl') {
       display: flex;
       position: static;
       padding-right: 0;
       height: auto;
     }
-    li:nth-child(2) {
-      margin-left: 2rem;
-    }
+    // li:nth-child(2) {
+    //   margin-left: 2rem;
+    // }
     li {
       font-size: 1.2rem;
       padding: .5rem;

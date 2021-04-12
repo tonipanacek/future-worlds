@@ -10,7 +10,10 @@
   display: grid;
   grid-gap: 0 1rem;
   padding: 2rem;
-  h2 { font-size: 1.5rem; }
+  h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
   @include respond-to('large') {
     padding: 4rem 0 4rem 6rem;
     h2 {
@@ -27,6 +30,13 @@
     padding: 1rem;
     border-radius: 15px;
     margin: 2rem;
+    font-size: 1.2rem;
+    &.yellow {
+      color: $blue;
+    }
+    &.pink {
+      color: $red;
+    }
   }
   .short { width: 60%; }
   .medium { width: 80%; }
