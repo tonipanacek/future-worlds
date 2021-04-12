@@ -8,14 +8,21 @@ nav {
   z-index: 10;
   h1 {
     font-size: 1.5rem;
+    .line-break {
+      display: block;
+    }
     @include respond-to('medium') {
       font-size: 1.75rem;
+      .line-break {
+        display: inline;
+      }
     }
   }
   .hamburger {
     outline: none;
     border: 0;
     background: inherit;
+    padding: 0;
     svg { fill: white; }
     @include respond-to('large') {
       display: none;
@@ -27,8 +34,8 @@ nav {
   ul {
     position: absolute;
     right: 0;
-    top: 67px;
     left: 0;
+    top: 56px;
     background: $orange;
     padding-right: 2rem;
     text-align: right;
@@ -36,6 +43,9 @@ nav {
     list-style: none;
     justify-content: space-between;
     display: none;
+    @include respond-to('medium') {
+      top: 67px;
+    }
     @include respond-to('large') {
       display: flex;
       position: static;
