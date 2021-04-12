@@ -180,16 +180,16 @@
   }
   &.green {
     color: $pink;
-    .highlight {
-      background: white;
-      color: $pink;
-      font-size: 1.6rem;
-      line-height: 2.2rem;
-      @include respond-to('medium') {
-        font-size: 2.2rem;
-        line-height: 3.2rem;
-      }
-    }
+    // .highlight {
+    //   background: white;
+    //   color: $pink;
+    //   font-size: 1.6rem;
+    //   line-height: 2.2rem;
+    //   @include respond-to('medium') {
+    //     font-size: 2.2rem;
+    //     line-height: 3.2rem;
+    //   }
+    // }
   }
   &.blue {
     color: $orange;
