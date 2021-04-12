@@ -7,7 +7,10 @@ nav {
   background: $orange;
   z-index: 10;
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    @include respond-to('medium') {
+      font-size: 1.75rem;
+    }
   }
   .hamburger {
     outline: none;

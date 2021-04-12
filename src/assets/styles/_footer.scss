@@ -10,4 +10,8 @@ footer {
   align-items: center;
   justify-content: space-between;
   z-index: 10;
+  font-size: .75rem;
+  @include respond-to('medium') {
+    font-size: 1rem;
+  }
 }

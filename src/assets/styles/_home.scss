@@ -46,12 +46,15 @@
     color: inherit;
     background: inherit;
     border: 0;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 300;
     text-transform: uppercase;
     margin: 0;
     transition: all 500ms;
     display: flex;
+    @include respond-to('medium') {
+      font-size: 5rem;
+    }
   }
   &:hover {
     cursor: pointer;
@@ -145,6 +148,7 @@
   justify-content: center;
   background: $yellow;
   transition: all 500ms;
+  height: 200px;
 }
 
 #build:hover {
@@ -173,27 +177,39 @@
   }
 }
 
-#listen-parent {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  height: 100%;
-}
+// #instructions {
+//   position: absolute;
+//   top: 15px;
+//   left: 15px;
+//   height: 100%;
+//   @include respond-to('medium') {
+//     position: static;
+//   }
+// }
 
-#say-parent {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  height: 100%;
-}
+// #say-parent {
+//   position: absolute;
+//   top: 0;
+//   right: 20px;
+//   height: 100%;
+//   @include respond-to('medium') {
+//     position: static;
+//   }
+// }
 
-#listen {
-  position: sticky;
-  top: 15px;
-  left: 15px;
-}
+// #listen {
+//   position: sticky;
+//   top: 15px;
+//   left: 15px;
+//   @include respond-to('medium') {
+//     position: static;
+//   }
+// }
 
-#have-your-say {
-  position: sticky;
-  top: 70vh;
-}
+// #have-your-say {
+//   position: sticky;
+//   top: 70vh;
+//   @include respond-to('medium') {
+//     position: static;
+//   }
+// }
