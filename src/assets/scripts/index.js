@@ -17,7 +17,7 @@ if (wordBoxes.length !== 0) {
       quote.classList.add('flex');
       overlayDiv.classList.add('overlay');
       body.classList.add('noscroll');
-      setTimeout(() => audio.play(), 1000)
+      setTimeout(() => audio.play(), 500)
     });
 
     closeBtn.addEventListener('click', () => {

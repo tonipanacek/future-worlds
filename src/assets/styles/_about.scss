@@ -6,8 +6,10 @@
     padding: 4rem;
   }
   h2 {
-    font-size: 4rem;
     margin-top: 0;
+    @include respond-to('medium') {
+      font-size: 4rem;
+    }
   }
   p {
     font-size: 1.2rem;

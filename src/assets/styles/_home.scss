@@ -5,6 +5,9 @@
 .home {
   position: relative;
   margin-bottom: 2rem;
+  @include respond-to('medium') {
+    margin-bottom: 3rem;
+  }
 }
 
 .home-grid {
@@ -28,6 +31,83 @@
   }
 }
 
+#changing {
+  order: 0;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#green {
+  order: 1;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#instructions {
+  order: 2;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#young {
+  order: 3;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#ours {
+  order: 4;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#future {
+  order: 6;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#joyful {
+  order: 5;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#hopeful {
+  order: 7;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#empowering {
+  order: 8;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#build {
+  order: 10;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
+#creative {
+  order: 9;
+  @include respond-to('medium') {
+    order: unset;
+  }
+}
+
 .word-box {
   height: 200px;
   overflow: hidden;
@@ -46,7 +126,7 @@
     color: inherit;
     background: inherit;
     border: 0;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 300;
     text-transform: uppercase;
     margin: 0;
