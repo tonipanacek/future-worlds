@@ -21,10 +21,14 @@ nav {
       display: none;
     }
   }
+  .show {
+    display: block !important;
+  }
   ul {
     position: absolute;
     right: 0;
     top: 67px;
+    left: 0;
     background: $orange;
     padding-right: 2rem;
     text-align: right;

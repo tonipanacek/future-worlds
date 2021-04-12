@@ -2,9 +2,9 @@
 
 const wordBoxes = document.querySelectorAll('.word-box');
 const overlayDiv = document.querySelector('.overlay-div');
-// const closeBtns = document.querySelectorAll('.close-btn');
-const expandableForm = document.querySelector('.collapsible');
 const body = document.body;
+const hamburger = document.querySelector('.hamburger');
+const menuList = document.querySelector('.menu-list');
 
 if (wordBoxes.length !== 0) {
   wordBoxes.forEach((box) => {
@@ -29,4 +29,10 @@ if (wordBoxes.length !== 0) {
       audio.currentTime = 0;
     });
   });
+}
+
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    menuList.classList.toggle('show');
+  })
 }
