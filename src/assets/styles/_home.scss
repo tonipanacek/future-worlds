@@ -15,7 +15,7 @@
   height: 100%;
   overflow: scroll;
   @include respond-to('medium') {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 225px 1fr 1fr 1fr 1fr 225px;
     grid-template-rows: repeat(5, 1fr);
   }
 }
@@ -28,6 +28,11 @@
 .span-3 {
   @include respond-to('medium') {
     grid-column: span 3;
+  }
+}
+.span-5 {
+  @include respond-to('medium') {
+    grid-column: span 5;
   }
 }
 
@@ -109,7 +114,7 @@
 }
 
 .word-box {
-  height: 200px;
+  height: 225px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -131,6 +136,9 @@
     margin: 0;
     transition: transform 500ms;
     display: flex;
+    &:focus {
+      outline: none;
+    }
     @include respond-to('medium') {
       font-size: 5rem;
     }
@@ -250,7 +258,7 @@
   align-items: center;
   justify-content: center;
   background: $yellow;
-  height: 200px;
+  height: 225px;
 }
 
 .build:hover {
@@ -270,6 +278,7 @@
   z-index: 10;
   font-size: 1.2rem;
   transition: transform 500ms;
+  padding: 1rem;
   a {
     color: white;
     text-decoration: none;
