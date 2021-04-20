@@ -1,8 +1,8 @@
 ---
 layout: gallery
 title: Your Future Worlds - Gallery
-pageTitle: Project Gallery
-pageDescription: This page is a space for all models, drawings, maps and ideas that were produced by young people in Hackney as part of this project. Thank you again to all the schools, young people and organisations who took part in the project!
+pageTitle: Gallery
+pageDescription: This page is a space to record the project as it has developed since it began in 2019, including the models and drawings produced by young people in Hackney, conversations with the community and outcomes for the project. Thank you again to everyone that took part in Your Future Worlds!
 bgColor: green
 images:
   - https://res.cloudinary.com/tonipanoche/image/upload/q_auto,dpr_auto,w_auto/v1618212261/future-worlds/shoreditch-park-01.jpg

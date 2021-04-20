@@ -37,6 +37,9 @@
     &.pink {
       color: $red;
     }
+    .name {
+      text-align: right;
+    }
   }
   .short { width: 60%; }
   .medium { width: 80%; }
