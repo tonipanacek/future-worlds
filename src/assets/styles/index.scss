@@ -24,3 +24,11 @@ body {
   color: white;
   background: $orange;
 }
+
+a:focus, button:focus, summary:focus {
+  outline: white 1px auto;
+}
+
+.outline-none {
+  outline: 0;
+}

@@ -12,6 +12,7 @@ if (wordBoxes.length !== 0) {
     const quote = document.querySelector(`#${id}-quote`);
     const audio = quote.querySelector('audio');
     const closeBtn = quote.querySelector('.close-btn');
+    const details = quote.querySelector('details');
     box.addEventListener('click', () => {
       quote.classList.remove('hidden');
       quote.classList.add('flex');
@@ -20,9 +21,18 @@ if (wordBoxes.length !== 0) {
       setTimeout(() => audio.play(), 500)
     });
 
+    details.addEventListener('toggle', (event) => {
+      if (details.open) {
+        quote.classList.remove('jc-around');
+      } else {
+        quote.classList.add('jc-around');
+      }
+    })
+
     closeBtn.addEventListener('click', () => {
       quote.classList.remove('flex');
       quote.classList.add('hidden');
+      details.removeAttribute('open');
       overlayDiv.classList.remove('overlay');
       body.classList.remove('noscroll');
       audio.pause();

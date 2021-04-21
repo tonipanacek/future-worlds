@@ -43,15 +43,31 @@
   }
 }
 
+details p {
+  color: white;
+  &.name {
+    color: inherit;
+    margin: 2rem 0;
+  }
+}
+
+#ours-quote details p {
+  color: inherit;
+  &.name {
+    color: red;
+    margin: 2rem 0;
+  }
+}
+
 #green {
-  order: 1;
+  order: 2;
   @include respond-to('medium') {
     order: unset;
   }
 }
 
 #instructions {
-  order: 2;
+  order: 1;
   @include respond-to('medium') {
     order: unset;
   }
@@ -137,7 +153,8 @@
     transition: transform 500ms;
     display: flex;
     &:focus {
-      outline: none;
+      outline: white 1px auto;
+      padding: 5px;
     }
     @include respond-to('medium') {
       font-size: 5rem;
@@ -159,7 +176,6 @@
   color: white;
   position: fixed;
   align-items: center;
-  justify-content: space-around;
   flex-direction: column;
   z-index: 13;
   padding: 2rem;
@@ -168,6 +184,9 @@
   right: 10px;
   left: 10px;
   overflow-y: scroll;
+  &.jc-around {
+    justify-content: space-around;
+  }
   h4 {
     font-size: 1.6rem;
     font-weight: 300;
@@ -194,16 +213,6 @@
   }
   &.green {
     color: $pink;
-    // .highlight {
-    //   background: white;
-    //   color: $pink;
-    //   font-size: 1.6rem;
-    //   line-height: 2.2rem;
-    //   @include respond-to('medium') {
-    //     font-size: 2.2rem;
-    //     line-height: 3.2rem;
-    //   }
-    // }
   }
   &.blue {
     color: $orange;
@@ -229,6 +238,9 @@
 }
 
 .close-btn {
+  background: inherit;
+  border: none;
+  // outline: none;
   position: absolute;
   top: 0;
   right: 5%;
@@ -279,11 +291,21 @@
   font-size: 1.2rem;
   transition: transform 500ms;
   padding: 1rem;
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  &:focus {
-    outline: none;
-  }
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+details {
+  cursor: pointer;
+  margin-top: 4rem;
+  // .name {
+  //   margin-top:
+  // }
+}
+
+summary {
+  text-align: center;
 }
