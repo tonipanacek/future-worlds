@@ -153,7 +153,7 @@ details p {
     transition: transform 500ms;
     display: flex;
     &:focus {
-      outline: white 1px auto;
+      outline: white 1px solid;
       padding: 5px;
     }
     @include respond-to('medium') {
@@ -188,8 +188,11 @@ details p {
     justify-content: space-around;
   }
   h4 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 300;
+    @include respond-to('medium') {
+      font-size: 1.6rem;
+    }
   }
   @include respond-to('medium') {
     right: 10%;
@@ -240,14 +243,14 @@ details p {
 .close-btn {
   background: inherit;
   border: none;
-  // outline: none;
   position: absolute;
   top: 0;
-  right: 5%;
+  right: 5px;
   font-size: 3rem;
   cursor: pointer;
   color: white;
   @include respond-to('medium') {
+    right: 5%;
     font-size: 4rem;
   }
 }
@@ -286,7 +289,7 @@ details p {
   width: 175px;
   height: 175px;
   border-radius: 50%;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   z-index: 10;
   font-size: 1.2rem;
   transition: transform 500ms;
