@@ -11,6 +11,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -25,10 +26,15 @@ body {
   background: $orange;
 }
 
-a:focus, button:focus, summary:focus {
+a:focus-visible, button:focus-visible, summary:focus-visible {
   outline: white 1px solid;
 }
 
+
 .outline-none {
   outline: 0;
+}
+
+.noscroll {
+  overflow: hidden;
 }

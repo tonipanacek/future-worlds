@@ -46,6 +46,7 @@
   .short { width: 60%; }
   .medium { width: 80%; }
   .long { width: 90%; }
+  .full { width: 100%; }
   .right, .left {
     display: flex;
     flex-direction: column;
@@ -84,8 +85,10 @@
 }
 
 .content {
-  width: 40ch;
-  height: 62ch;
+  @include respond-to('medium') {
+    width: 40ch;
+    height: 62ch;
+  }
   margin: 2rem;
   padding: 1rem 2rem;
   border-radius: 25px;

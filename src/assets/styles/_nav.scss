@@ -29,7 +29,9 @@ nav {
     }
   }
   .show {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-end;
   }
   ul {
     position: absolute;

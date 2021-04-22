@@ -44,5 +44,6 @@ if (wordBoxes.length !== 0) {
 if (hamburger) {
   hamburger.addEventListener('click', () => {
     menuList.classList.toggle('show');
+    body.classList.toggle('noscroll');
   })
 }

@@ -3,7 +3,7 @@
   <head>
     {% include "_head.njk" %}
   </head>
-  <body class="{{ bodyClass }}">
+  <body>
     {% include "_navbar.njk" %}
     {% block main %}
       {{ content | safe }}
