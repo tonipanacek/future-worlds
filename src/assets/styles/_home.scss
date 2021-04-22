@@ -184,6 +184,8 @@ details p {
   right: 10px;
   left: 10px;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
   &.jc-around {
     justify-content: space-around;
   }
