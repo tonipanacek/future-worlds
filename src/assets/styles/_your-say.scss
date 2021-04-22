@@ -23,7 +23,7 @@
     h2 {
       font-size: 2rem;
     }
-    .your-say-box:nth-child(2), .your-say-box:nth-child(4) {
+    .your-say-box:nth-child(2n), .your-say-box:nth-child(4) {
       margin-left: -10px;
     }
   }
@@ -130,5 +130,12 @@
       background: white;
       border: 2px solid $blue;
     }
+  }
+}
+
+.form-sticker {
+  display: block;
+  @include respond-to('medium') {
+    display: none;
   }
 }

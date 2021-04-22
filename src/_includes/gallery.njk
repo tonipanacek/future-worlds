@@ -8,7 +8,7 @@
   </div>
   <div class="image-gallery">
     {% for imageUrl in images %}
-    <img src="{{ imageUrl }}" class="" alt="" loading="lazy">
+    <img src="{{ imageUrl }}" id="image-{{ loop.index }}" alt="" loading="lazy">
     {% endfor %}
   </div>
 </main>
