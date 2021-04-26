@@ -134,7 +134,7 @@
 }
 
 .form-sticker {
-  display: block;
+  display: flex;
   @include respond-to('medium') {
     display: none;
   }
