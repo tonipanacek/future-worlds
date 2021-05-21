@@ -4,7 +4,10 @@
 <main class="{{ bgColor }} gallery">
   <div class="text-grid">
     <h2>{{ pageTitle }}</h2>
-    <p>{{ pageDescription }}</p>
+    <div class="text-content">
+      <p>{{ pageDescription }}</p>
+      <p>Professional street photography by Tom Harrison & Jack Arts.</p>
+    </div>
   </div>
   <div class="image-gallery">
     {% for imageUrl in images %}

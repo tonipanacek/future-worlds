@@ -1,8 +1,8 @@
 lang: en
-name: eleventy-webpack
-title: eleventy-webpack
+name: Your Future Worlds
+title: Your Future Worlds
 # see https://ogp.me/#types
 type: website
-url: https://github.com/clenemt/eleventy-webpack
-image: https://avatars3.githubusercontent.com/u/447956?s=400&v=4
-description: A barebone Eleventy and Webpack boilerplate 🎈.
+url: https://yourfutureworlds.co.uk
+image: https://res.cloudinary.com/tonipanoche/image/upload/v1621608334/future-worlds/Screen_Shot_2021-04-02_at_12.54.50_1.png
+description: Your Future Worlds is a project created to celebrate the young voices of Hoxton and their aspirations for the future.
